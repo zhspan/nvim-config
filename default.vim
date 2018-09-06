@@ -17,11 +17,12 @@ set expandtab		" tabs are spaces
 set softtabstop=2	" Number of spaces per tab
 set shiftwidth=2 " Number of spaces for autoindent
 set copyindent   " Copy indent from the previous line
+set nocindent     " Turn off c indent
+set noautoindent    " Turn off autoindent
+set nosmartindent  " Turn off smartindent
 
 " UI
 set showcmd
-set nocindent     " Turn off c indent
-set noautoindent    " Turn off autoindent
 set wildmenu		" Visual autocomplete for command menu
 set lazyredraw		" Only redraws when needed
 
