@@ -16,9 +16,8 @@ set tabstop=2		" Visual Spaces for a tab
 set expandtab		" tabs are spaces
 set softtabstop=2	" Number of spaces per tab
 set shiftwidth=2 " Number of spaces for autoindent
-set copyindent   " Copy indent from the previous line
 set nocindent     " Turn off c indent
-set noautoindent    " Turn off autoindent
+set autoindent    " Turn on autoindent
 set nosmartindent  " Turn off smartindent
 
 " UI
