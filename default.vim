@@ -29,7 +29,7 @@ set lazyredraw		" Only redraws when needed
 set incsearch		" Search as characters are entered
 set hlsearch		" highlight matches
 nnoremap <leader> <space> :nohlsearch<CR>	" Turn off search highlight
-nnoremap <silent> <F8> :TListToggle<CR> " Tag List
+nnoremap <silent> <F8> :TlistToggle<CR> " Tag List
 
 " Folding
 nnoremap <space> za	" Space open/closes folds
