@@ -13,7 +13,7 @@ call plug#begin('~/.config/nvim/plugged')
 " Functional
 Plug 'https://github.com/tpope/vim-fugitive'
 Plug 'https://github.com/junegunn/goyo.vim'
-" Plug 'https://github.com/vim-scripts/taglist.vim'
+Plug 'https://github.com/vim-scripts/taglist.vim'
 Plug 'https://github.com/tpope/vim-surround'
 " Plug 'https://github.com/Valloric/YouCompleteMe'
 
