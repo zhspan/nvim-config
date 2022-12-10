@@ -7,7 +7,7 @@ local packer_bootstrap = function()
   local packer_dir = pack_dir .. '/packer/start/packer.nvim'
   -- check for packer install by checking for the existence of packer_dir
   local ok, err = os.rename(packer_dir, packer_dir)
-  if ok != true then
+  if ok ~= true then
     -- install packer
     local git_cmd = 'git clone --depth 1 https://github.com/wbthomason/packer.nvim ' .. packer_dir
     local handle = io.popen(git_cmd)

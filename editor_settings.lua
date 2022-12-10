@@ -2,8 +2,8 @@
 vim.o.encoding = 'utf-8'
 
 -- *** search ***
-vim.o.incsearch             -- start search as soon as characters are entered
-vim.o.hlsearch              -- highlight matches
+vim.o.incsearch   = true    -- start search as soon as characters are entered
+vim.o.hlsearch    = true    -- highlight matches
 
 -- *** spaces and tabs ***
 -- many of these settings will be overriden
@@ -71,5 +71,5 @@ vim.o.lazyredraw  = true    -- screen is not redrawn when activation macros
 -- colors
 vim.o.termguicolors = true
 vim.o.background    = 'dark'
-vim.cmd([[ colorscheme grubbox ]])
+vim.cmd([[ colorscheme gruvbox ]])
 
