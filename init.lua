@@ -1,7 +1,10 @@
 -- init.lua zhspan
+local config_dir = vim.fn.stdpath('config')
 
 -- Load plugins
-require('load_plugins')
+local load_plugins_path = config_dir .. '/load_plugins.lua'
+dofile(load_plugins_path)
 
 -- Default settings
-require('editor_settings')
+local editor_settings_path = config_dir .. '/editor_settings.lua'
+dofile(editor_settings_path)
