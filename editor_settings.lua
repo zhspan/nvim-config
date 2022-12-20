@@ -16,7 +16,7 @@ vim.o.cindent     = false   -- turn off c indent
 vim.o.smartindent = false
 
 -- *** keybindings ***
-function map(mode, alias, command, options)
+local function map(mode, alias, command, options)
   local default_options = {
     noremap = true
   }
@@ -28,11 +28,23 @@ function map(mode, alias, command, options)
   vim.api.nvim_set_keymap(mode, alias, command, default_options)
 end
 
+local function vim_opt_toggle(opt, on, off, name)
+  local message = name
+  if vim.opt[opt]:get() == off then
+    vim.opt[opt] = on
+    message = message .. " Enabled"
+  else
+    vim.opt[opt] = off
+    message = message .. " Disabled"
+  end
+  vim.notify(message)
+end
+
 -- leader
 vim.g.mapleader = ','
 
 -- insert
-map('i', 'jk', '<esc>')
+map('i', 'jk', '<esc>') -- jk to exit insert mode
 
 -- search
 map('n', '<leader><space>', ':nohlsearch<CR>') -- leader space to turn off search highlight
@@ -40,6 +52,11 @@ map('n', '<leader><space>', ':nohlsearch<CR>') -- leader space to turn off searc
 -- navigation
 map('n', '<f8>', ':TlistToggle<CR>', { silent = true }) -- f8 to toggle TagList
 map('n', '<space>', 'za') -- space opens/closes folds
+
+-- toggle column display with <leader>c
+vim.keymap.set({'i', 'n'}, '<leader>c', function()
+  vim_opt_toggle('cursorcolumn', true, false, 'Cursor Column')
+end)
 
 -- move graphically by default
 map('n', 'j', 'gj')
