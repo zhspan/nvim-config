@@ -26,24 +26,24 @@ return require('packer').startup(
     use 'wbthomason/packer.nvim'
 
     -- Functional
-    use 'https://github.com/tpope/vim-fugitive'
-    use 'https://github.com/junegunn/goyo.vim'
-    use 'https://github.com/vim-scripts/taglist.vim'
-    use 'https://github.com/tpope/vim-surround'
+    use 'tpope/vim-fugitive'
+    use 'junegunn/goyo.vim'
+    use 'vim-scripts/taglist.vim'
+    use 'tpope/vim-surround'
 
     -- Graphical
-    use 'https://github.com/godlygeek/csapprox'
-    use 'https://github.com/Konfekt/FastFold'
-    use 'https://github.com/tmhedberg/SimpylFold'
+    use 'godlygeek/csapprox'
+    use 'Konfekt/FastFold'
+    use 'tmhedberg/SimpylFold'
 
     -- Colorscheme
-    use 'https://github.com/HenryNewcomer/vim-theme-papaya'
-    use 'https://github.com/saalaa/ancient-colors.vim'
-    use 'https://github.com/gosukiwi/vim-atom-dark'
-    use 'https://github.com/NLKNguyen/papercolor-theme'
-    use 'https://github.com/morhetz/gruvbox'
-    use 'https://github.com/Lokaltog/vim-distinguished'
-    use 'https://github.com/sjl/badwolf'
+    use 'HenryNewcomer/vim-theme-papaya'
+    use 'saalaa/ancient-colors.vim'
+    use 'gosukiwi/vim-atom-dark'
+    use 'NLKNguyen/papercolor-theme'
+    use 'morhetz/gruvbox'
+    use 'Lokaltog/vim-distinguished'
+    use 'sjl/badwolf'
 
     if packer_bootstrapped then
       require('packer').sync()
