@@ -8,9 +8,9 @@ vim.o.hlsearch    = true    -- highlight matches
 -- *** spaces and tabs ***
 -- many of these settings will be overriden
 vim.o.expandtab   = true    -- tabs are spaces
-vim.o.tabstop     = 2       -- visual spaces per tab
-vim.o.softtabstop = 2       -- number of spaces per tab
-vim.o.shiftwidth  = 2       -- number of spaces for autoindent
+vim.o.tabstop     = 4       -- visual spaces per tab
+vim.o.softtabstop = 4       -- number of spaces per tab
+vim.o.shiftwidth  = 4       -- number of spaces for autoindent
 vim.o.autoindent  = true    
 vim.o.cindent     = false   -- turn off c indent
 vim.o.smartindent = false
